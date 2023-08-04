@@ -34,7 +34,7 @@ print(colors.green + """
 \    \_\  (  <_> )  |_> >   Y  \  ___/|  | \/  |  /\___ \\
  \______  /\____/|   __/|___|  /\___  >__|  |____//____  >
         \/       |__|        \/     \/                 \/
-""" + "\n\t\t" + colors.blue + "author: " + colors.orange + "$_SpyD3r_$" + "\n" + colors.reset)
+""" + "\n\t\t" + colors.blue + "author: " + colors.orange + "$_SpyD3r_$" + "\n\t\t" + colors.red + "modified: " + "@bullsecsecure" + "\n" + colors.reset)
 
 if(not args.exploit):
     print(parser.print_help())
