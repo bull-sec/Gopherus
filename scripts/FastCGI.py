@@ -1,12 +1,12 @@
 import urllib
 
 def FastCGI():
-    filename = raw_input("\033[96m" +"Give one file name which should be surely present in the server (prefer .php file)\nif you don't know press ENTER we have default one:  "+ "\033[0m")
+    filename = input("\033[96m" +"Give one file name which should be surely present in the server (prefer .php file)\nif you don't know press ENTER we have default one:  "+ "\033[0m")
 
     if(not filename):
         filename="/usr/share/php/PEAR.php"
 
-    command=raw_input("\033[96m" +"Terminal command to run:  "+ "\033[0m")
+    command=input("\033[96m" +"Terminal command to run:  "+ "\033[0m")
     length=len(command)+52
     char=chr(length)
 

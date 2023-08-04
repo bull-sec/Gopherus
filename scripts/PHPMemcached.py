@@ -3,7 +3,7 @@ import urllib
 def PHPMemcached():
     print("\033[01m" + "\nThis is usable when you know Class and Variable name used by user\n"+ "\033[0m")
 
-    code = raw_input("\033[96m" +"Give serialization payload\nexample: O:5:\"Hello\":0:{}   : "+ "\033[0m")
+    code = input("\033[96m" +"Give serialization payload\nexample: O:5:\"Hello\":0:{}   : "+ "\033[0m")
 
     if(not code):
         print("\033[93m" + "Plz give payload" + "\033[0m")

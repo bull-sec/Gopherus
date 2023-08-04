@@ -1,9 +1,9 @@
 from __future__ import print_function
 
 def PostgreSQL():
-	user = raw_input("\033[96m" + "PostgreSQL Username: " + "\033[0m")
-	db = raw_input("\033[96m" + "Database Name: " + "\033[0m")
-	query = raw_input("\033[96m" + "Query: " + "\033[0m")
+	user = input("\033[96m" + "PostgreSQL Username: " + "\033[0m")
+	db = input("\033[96m" + "Database Name: " + "\033[0m")
+	query = input("\033[96m" + "Query: " + "\033[0m")
 
 	encode_user = user.encode("hex")
 	encode_db = db.encode("hex")

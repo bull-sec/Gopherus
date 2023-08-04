@@ -2,10 +2,10 @@ import urllib
 
 def SMTP():
     print("\033[01m"+"\nGive Details to send mail: \n"+ "\033[0m")
-    mailfrom = raw_input("\033[96m" +"Mail from :  "+ "\033[0m")
-    Mailto = raw_input("\033[96m" +"Mail To :  "+ "\033[0m")
-    subject = raw_input("\033[96m" +"Subject :  "+ "\033[0m")
-    msg = raw_input("\033[96m" +"Message :  "+ "\033[0m")
+    mailfrom = input("\033[96m" +"Mail from :  "+ "\033[0m")
+    Mailto = input("\033[96m" +"Mail To :  "+ "\033[0m")
+    subject = input("\033[96m" +"Subject :  "+ "\033[0m")
+    msg = input("\033[96m" +"Message :  "+ "\033[0m")
 
     commands = [
         'MAIL FROM:' + mailfrom,

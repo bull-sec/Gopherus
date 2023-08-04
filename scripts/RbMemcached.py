@@ -2,7 +2,7 @@ import urllib
 
 def RbMemcached():
     print("\033[01m" +"\nReady to Get Reverse SHELL\n"+ "\033[0m")
-    server = raw_input("\033[96m" +"Give server IP you want to connect (default is 127.0.0.1): "+ "\033[0m")
+    server = input("\033[96m" +"Give server IP you want to connect (default is 127.0.0.1): "+ "\033[0m")
 
     if(not server):
         server = "127.0.0.1"

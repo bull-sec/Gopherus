@@ -1,7 +1,7 @@
 import urllib
 
 def DumpMemcached():
-    code = raw_input("\033[96m" +"Give payload you want to run in Memcached Server: "+ "\033[0m")
+    code = input("\033[96m" +"Give payload you want to run in Memcached Server: "+ "\033[0m")
 
     payload = urllib.quote_plus(code).replace("+","%20").replace("%2F","/").replace("%25","%").replace("%3A",":")
 
